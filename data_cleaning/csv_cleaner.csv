@@ -1,0 +1,1 @@
+cat test.csv| awk -F '[,.]' '{print $1,$2,$(NF-1)"."$NF}' | sort -n | uniq
